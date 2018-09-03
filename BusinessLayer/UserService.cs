@@ -65,7 +65,7 @@ namespace BusinessLayer
         {
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
             client.EnableSsl = true;
-            MailAddress from = new MailAddress("nayeem.azad.cse@gmail.com", "Admin-DMS");
+            MailAddress from = new MailAddress("replace_your_gmail_id_here@gmail.com", "Admin-DMS");
             MailAddress to = new MailAddress(email, name);
             MailMessage message = new MailMessage(from, to);
             message.Body ="Hello,"+name +"! Please use these credentials to sign in DMS Software. Email="+email+" and password= "+password+"  .Thank you!";
