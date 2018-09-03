@@ -70,7 +70,7 @@ namespace BusinessLayer
             MailMessage message = new MailMessage(from, to);
             message.Body ="Hello,"+name +"! Please use these credentials to sign in DMS Software. Email="+email+" and password= "+password+"  .Thank you!";
             message.Subject = "DMS- USER LOGIN DETAILS";
-            NetworkCredential myCreds = new NetworkCredential("nayeem.azad.cse@gmail.com", "replace_your_gmail_password_here", "");
+            NetworkCredential myCreds = new NetworkCredential("replace_your_gmail_id_here@gmail.com", "replace_your_gmail_password_here", "");
             client.Credentials = myCreds;
             try
             {
